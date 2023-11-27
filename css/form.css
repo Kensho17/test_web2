@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0000cc;
+    background-color: #fff;
+}
+
+main{
+    margin: 100px auto;
+    width: 80vw;
+    min-width: 820px;
+    max-width: 1000px;
+    border: 2px solid #0000cc;
+}
+
+
+form, fieldset.leVote, fieldset.lesOptions, fieldset.lesBoutons{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+fieldset fieldset{
+    margin-bottom: 2%;
+}
+
+fieldset.colonne{
+    width: 45%;
+    border: none;
+}
+
+label{
+    display: block;
+}
+
+#Identification{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-right: 12%;
+}
+
+#Identification label{
+    margin-top: 2%;
+}
+
+#Identification input, #Identification select{
+    width: 150px;
+}
+
+span, input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+}
+
+fieldset.leVote span{
+    display: inline-block;
+    width: 14px;
+    height: 15px;
+    background-image: url("../image/checkbox-icon-26.jpg");
+    background-size: 42px 30px;
+    background-position: -14px 15px;
+}
+
+fieldset.leVote input:checked ~ span{
+    background-position: -14px -1px;
+}
+
+input[type="radio"] {
+    display: none;
+}

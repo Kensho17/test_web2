@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form version 1</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <main>
+        <form action="">
+            <fieldset class="colonne">
+                <fieldset id="Identification">
+                    <legend>Identification</legend>
+                    <label>Votre nom:
+                        <input type="text" placeholder="Écrire ici" required></label>
+                    <label>Votre prénom:
+                        <input type="text" required></label>
+                    <label>Votre courriel:
+                        <input type="email" required></label>
+                    <label>Votre age:
+                        <input type="number" min="0" max="150" required></label>
+                    <label>Votre téléphone:
+                        <input type="tel" required></label>
+                    <label>Votre URL:
+                        <input type="url" required></label>
+                        <label>Votre pizza:
+                            <select>
+                                <option value="1">Choix1</option>
+                                <option value="2">Choix2</option>
+                                <option value="3">Choix3</option>
+                                <option value="4">Choix4</option>
+                            </select>
+                        </label>
+                </fieldset>
+            </fieldset>
+            <fieldset class="colonne">
+                <fieldset class="leVote">
+                    <legend>Votre vote</legend>
+                    <label><input type="radio" name="vote"><span></span>Choix 1</label>
+                    <label><input type="radio" name="vote"><span></span>Choix 2</label>
+                    <label><input type="radio" name="vote"><span></span>Choix 3</label>
+                </fieldset>
+                <fieldset class="lesOptions">
+                    <legend>Vos option</legend>
+                    <label><input type="checkbox">Option 1</label>
+                    <label><input type="checkbox">Option 2</label>
+                    <label><input type="checkbox">Option 3</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Vos commentaire</legend>
+                    <textarea rows="5">Écrire ici</textarea>
+                </fieldset>
+                <fieldset class="lesBoutons">
+                    <input type="button" value="Bouton">
+                    <input type="reset" value="Vider">
+                    <input type="submit" value="Soumettre">
+                </fieldset>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
